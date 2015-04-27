@@ -1,0 +1,113 @@
+html, body, pre {
+    background-color: #000;
+/*    background-color: #fff;*/
+	
+    color: #bbb;
+	margin: 0px;
+
+	overflow: hidden;
+
+	height: 100%;
+	width: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: 'Cabin Sketch', serif;
+}
+
+a
+{
+	text-decoration: none;
+	color: #911;
+}
+
+table, input { width: 100%; margin-top: 5px; }
+tr { margin-top: 5px; }
+
+input
+{
+	background: none repeat scroll 0 0 white;
+	border: 1px solid #D5D5D5;
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.center
+{
+    display: table-cell;
+    text-align: center;
+}
+
+.center pre
+{
+	font-size: 4px;
+}
+
+#frame_0, #frame_1
+{
+	display: none;
+}
+
+#auth
+{
+	color: darkgrey;
+	overflow: hidden;
+}
+
+#auth .label
+{
+	width: 30%;
+	line-height: 8px;
+}
+
+#auth .input
+{
+	width: 70%;
+}
+
+#message
+{
+	overflow: hidden;
+}
+
+#ajax_loader
+{
+	display: none;
+	position: absolute;
+    top:5px;
+    right:15px;
+	z-index: 999999;
+}
+
+.header
+{
+	font-family: monospace;
+	padding-top: 5px;
+
+	border-bottom: 1px solid #411;
+	white-space: nowrap;
+}
+
+.userlinks, .caption
+{
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+.header .caption
+{
+	padding-left: 10px;
+	color: #ccc;
+	font-weight: bold;
+}
+
+.header .userlinks
+{
+	float: right;
+	padding-right: 10px;
+}

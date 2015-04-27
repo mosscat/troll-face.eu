@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}hey..{% endblock %}
+
+{% block custom_js %}
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script type="text/javascript" src="/static/js/auth.js"></script>
+	<script type="text/javascript" src="/static/js/ascii.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div id="auth"><table><tr><td class="label">username:</td><td class="input"><input id="uname" name="uname" /></td></tr><tr><td class="label">password:</td><td class="input"><input id="upass" type="password" name="upass" /></td></tr></table>{% csrf_token %}</div>
+	<div id="message"><!-- messageBox --></div>
+	<div id="frame_0" class="center"><img src="/static/img/trollface01.png" /></div>
+	<div id="frame_1" class="center"><img src="/static/img/trollface02.png" /></div>
+{% endblock %}

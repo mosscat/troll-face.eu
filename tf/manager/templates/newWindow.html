@@ -1,0 +1,31 @@
+{% extends "admin/base_site.html" %}
+
+{% block extrahead %}
+	<script type="text/javascript" src="/static/js/jquery-1.5.1.js"></script>
+{% endblock %}
+
+{% block content %}
+<script language="JavaScript"><!--
+	function goNewWin() {
+		// Set height and width
+		var NewWinHeight=800;
+		var NewWinWidth=600;
+
+//		// Place the window
+//		var NewWinPutX=10;
+//		var NewWinPutY=10;
+
+		//Get what is below onto one line
+		TheNewWin =window.open("{{ url }}", 'shell', 'fullscreen=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');
+
+		//Get what is above onto one line
+		TheNewWin.resizeTo(NewWinHeight,NewWinWidth);
+//		TheNewWin.moveTo(NewWinPutX,NewWinPutY);
+	}
+
+	window.location.assign( '/');
+	$(document).ready( function(){
+		goNewWin();
+	});
+--></script>
+{% endblock %}
